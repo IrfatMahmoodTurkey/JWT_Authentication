@@ -1,0 +1,4 @@
+<app-right-side-bar *ngIf="isLoggedIn$ | async as isLoggedIn"></app-right-side-bar>
+<app-left-side-bar *ngIf="isLoggedIn$ | async as isLoggedIn"></app-left-side-bar>
+<app-right-side-bar-two *ngIf="isLoggedIn$ | async as isLoggedIn"></app-right-side-bar-two>
+<router-outlet></router-outlet>
