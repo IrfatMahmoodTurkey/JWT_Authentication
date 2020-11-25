@@ -12539,11 +12539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\JWT\\JwtWebApi\\JwtWebApi\\JwtWebApi.csproj",
+      "projectUniqueName": "D:\\Project\\JWT\\JWT_Authentication\\JwtWebApi\\JwtWebApi\\JwtWebApi.csproj",
       "projectName": "JwtWebApi",
-      "projectPath": "D:\\Project\\JWT\\JwtWebApi\\JwtWebApi\\JwtWebApi.csproj",
+      "projectPath": "D:\\Project\\JWT\\JWT_Authentication\\JwtWebApi\\JwtWebApi\\JwtWebApi.csproj",
       "packagesPath": "C:\\Users\\User-1\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\JWT\\JwtWebApi\\JwtWebApi\\obj\\",
+      "outputPath": "D:\\Project\\JWT\\JWT_Authentication\\JwtWebApi\\JwtWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
