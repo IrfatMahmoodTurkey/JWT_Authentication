@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';    
-import { HttpClient } from '@angular/common/http';    
+import { HttpClient,HttpHeaders } from '@angular/common/http';    
 import { BehaviorSubject } from 'rxjs';    
 import { map } from 'rxjs/operators';    
 import { Router } from '@angular/router';    
@@ -50,5 +50,20 @@ export class AuthService {
     localStorage.removeItem('authToken');    
     this.router.navigate(['/signin']);
     this.loggedIn.next(false);      
-  } 
+  }
+  
+  getValue(token: string) {
+    // let customHeaders = new Headers({ 'Authorization': "bearer "+token });
+    // const requestOptions: any = { headers: customHeaders };
+
+    const httpOptions:any = {
+      headers: new HttpHeaders({
+        'Authorization': 'bearer ' + token
+      })
+    };
+
+    // const headers: HttpHeaders = new HttpHeaders();
+    // headers.set('Authorization', 'bearer ' + token);
+    return this.http.get("https://localhost:44328/api/user/admin", httpOptions);
+  }
 }

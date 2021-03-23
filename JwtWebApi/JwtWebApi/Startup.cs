@@ -80,7 +80,6 @@ namespace JwtWebApi
 
             app.UseCors("EnableCORS");
             app.UseAuthentication();
-            //app.UseAuthorization();
             app.UseHttpsRedirection();
             app.UseMvc();
         }
